@@ -2,10 +2,18 @@ const apiUrl = "https://sevn-pleno-esportes.deno.dev/";
 let currentRound = 1;
 let roundsData = [];
 async function fetchRounds() {
-  const response = await fetch(apiUrl);
-  roundsData = await response.json();
-  renderGames();
+  try {
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    roundsData = await response.json();
+    renderGames();
+  } catch (error) {
+    console.error("Failed to fetch rounds data:", error);
+  }
 }
+
 function renderGames() {
   const gamesList = document.getElementById("games-list");
   const roundDisplay = document.getElementById("round-number");
