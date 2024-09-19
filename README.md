@@ -21,8 +21,8 @@ A API utilizada neste projeto oferece as seguintes informações:
 
 1.  **Clone o repositório**:
   
-    `git clone <url-do-repositório>
-    cd <nome-do-repositório>` 
+    `git clone [<url-do-repositório>](https://github.com/eduardomds1996/sevn.git)]
+    cd sevn` 
     
 2.  **Abra o arquivo HTML** em um navegador.
     
