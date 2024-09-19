@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #33b667;
+  height: 76px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 900;
+  }
+}
+
+.container {
+  width: 100%;
+  height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
